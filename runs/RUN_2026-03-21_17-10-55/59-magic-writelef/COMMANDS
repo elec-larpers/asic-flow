@@ -1,0 +1,1 @@
+magic -dnull -noconsole -rcfile /home/george-sleen/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/magic/sky130A.magicrc /nix/store/3j7sk634lffssphph2cw5y1zqr0www5z-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/magic/wrapper.tcl

@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/tmp/97f2267fc2ba4fbfb7675feea3ca6a21.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/tmp/97f2267fc2ba4fbfb7675feea3ca6a21.bb.v"

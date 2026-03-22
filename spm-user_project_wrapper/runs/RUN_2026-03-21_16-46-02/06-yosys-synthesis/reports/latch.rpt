@@ -1,0 +1,4 @@
+
+16. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\SPM_example.\ncnt' from process `\SPM_example.$proc$/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:218$69'.
+No latch inferred for signal `\SPM_example.\nstate' from process `\SPM_example.$proc$/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:202$63'.

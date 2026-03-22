@@ -1,0 +1,46 @@
+if {![info exists ::env(PDK_ROOT)] || $::env(PDK_ROOT) eq ""} {
+    puts stderr "PDK_ROOT is not set."
+    quit -noprompt
+}
+
+if {![info exists ::env(SKY130_MAGICRC)] || $::env(SKY130_MAGICRC) eq ""} {
+    puts stderr "SKY130_MAGICRC is not set."
+    quit -noprompt
+}
+
+if {![info exists ::env(STDCELL_GDS)] || $::env(STDCELL_GDS) eq ""} {
+    puts stderr "STDCELL_GDS is not set."
+    quit -noprompt
+}
+
+if {![info exists ::env(STDCELL_DEFAULT_CELL)] || $::env(STDCELL_DEFAULT_CELL) eq ""} {
+    set ::env(STDCELL_DEFAULT_CELL) sky130_fd_sc_hd__inv_1
+}
+
+source $::env(SKY130_MAGICRC)
+
+puts "Reading standard-cell GDS at '$::env(STDCELL_GDS)'..."
+if {[catch {gds readonly true} errmsg]} {
+    puts stderr $errmsg
+    quit -noprompt
+}
+
+if {[catch {gds read $::env(STDCELL_GDS)} errmsg]} {
+    puts stderr $errmsg
+    quit -noprompt
+}
+
+puts "Loading default cell '$::env(STDCELL_DEFAULT_CELL)'..."
+if {[catch {load $::env(STDCELL_DEFAULT_CELL)} errmsg]} {
+    puts stderr $errmsg
+    quit -noprompt
+}
+
+expand
+view
+
+puts "Loaded '$::env(STDCELL_DEFAULT_CELL)'. Use 'load <cellname>' in Magic to inspect another imported cell."
+
+if {[info exists ::env(STDCELL_AUTOQUIT)] && $::env(STDCELL_AUTOQUIT) eq "1"} {
+    quit -noprompt
+}

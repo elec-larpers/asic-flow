@@ -1,0 +1,25 @@
+{
+  "DESIGN_NAME": "yolo26n_top",
+  "VERILOG_FILES": [
+    "dir::./rtl/yolo26n_top_emergency.v"
+  ],
+  "CLOCK_PORT": "clock",
+  "CLOCK_PERIOD": 50,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    250,
+    250
+  ],
+  "CORE_AREA": [
+    20,
+    20,
+    230,
+    230
+  ],
+  "FP_PDN_MULTILAYER": true,
+  "PL_TARGET_DENSITY_PCT": 45,
+  "MAX_FANOUT_CONSTRAINT": 8,
+  "ERROR_ON_SYNTH_CHECKS": false
+}

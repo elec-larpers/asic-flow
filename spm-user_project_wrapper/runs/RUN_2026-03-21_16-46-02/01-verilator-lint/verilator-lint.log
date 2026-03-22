@@ -1,0 +1,36 @@
+%Warning-WIDTHEXPAND: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:120:24: Operator ASSIGNW expects 128 bits on the Assign RHS, but Assign RHS's REPLICATE generates 127 bits.
+                                                                                                                                     : ... note: In instance 'SPM_example'
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.018
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:172:21: Operator ASSIGNDLY expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'status' generates 1 bits.
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:65:20: Signal is not used: 'la_data_in'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:67:20: Bits of signal are not used: 'la_oenb'[127:64,31:0]
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:70:37: Signal is not used: 'io_in'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:81:17: Signal is not driven, nor used: 'rdata'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:82:17: Signal is not used: 'wdata'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:83:21: Signal is not driven, nor used: 'count'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:86:16: Signal is not used: 'wstrb'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:87:17: Signal is not used: 'la_write'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDPARAM: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:92:32: Parameter is not used: 'S2'
+                                                                                                                                    : ... note: In instance 'SPM_example'
+%Warning-UNUSEDPARAM: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:92:40: Parameter is not used: 'S3'
+                                                                                                                                    : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:103:15: Signal is not driven, nor used: 'WB_address'
+                                                                                                                                      : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:104:9: Signal is not driven, nor used: 'WB_Read'
+                                                                                                                                     : ... note: In instance 'SPM_example'
+%Warning-UNUSEDSIGNAL: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:104:18: Signal is not driven, nor used: 'WB_Write'
+                                                                                                                                      : ... note: In instance 'SPM_example'
+%Warning-COMBDLY: /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/SPM_example.v:220:26: Non-blocking assignment '<=' in combinational logic process
+                                                                                                                                 : ... This will be executed as a blocking assignment '='!
+                  *** See https://verilator.org/warn/COMBDLY before disabling this,
+                  else you may end up with different sim results.

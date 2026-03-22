@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_17-10-55/52-openroad-fillinsertion/or_metrics_out.json /nix/store/3j7sk634lffssphph2cw5y1zqr0www5z-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/fill.tcl

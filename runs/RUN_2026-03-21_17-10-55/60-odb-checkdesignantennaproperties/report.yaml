@@ -1,0 +1,4 @@
+- cell: yolo26n_top
+  inout: []
+  input: []
+  output: []

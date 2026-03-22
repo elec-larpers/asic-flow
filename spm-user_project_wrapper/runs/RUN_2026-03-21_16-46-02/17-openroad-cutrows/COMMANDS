@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/17-openroad-cutrows/or_metrics_out.json /nix/store/3j7sk634lffssphph2cw5y1zqr0www5z-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/cut_rows.tcl

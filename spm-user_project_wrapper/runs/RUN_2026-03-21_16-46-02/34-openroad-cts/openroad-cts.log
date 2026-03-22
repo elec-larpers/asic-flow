@@ -1,0 +1,133 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/george-sleen/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/george-sleen/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/george-sleen/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/33-openroad-detailedplacement/SPM_example.odb'…
+Reading design constraints file at '/nix/store/3j7sk634lffssphph2cw5y1zqr0www5z-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock wb_clk_i…
+[INFO] Setting output delay to: 5
+[INFO] Setting input delay to: 5
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO] Configuring cts characterization…
+[INFO] Performing clock tree synthesis…
+[INFO] Looking for the following net(s): SPM.clk
+[INFO] Running Clock Tree Synthesis…
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_2
+                    sky130_fd_sc_hd__clkbuf_4
+                    sky130_fd_sc_hd__clkbuf_8
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0007] Net "wb_clk_i" found for clock "wb_clk_i".
+[INFO CTS-0010]  Clock net "wb_clk_i" has 234 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0200] 0 placement blockages have been identified.
+[INFO CTS-0201] 0 placed hard macros will be treated like blockages.
+[INFO CTS-0027] Generating H-Tree topology for net wb_clk_i.
+[INFO CTS-0028]  Total number of sinks: 234.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 25 and clustering diameter of 50.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 60.
+[INFO CTS-0024]  Normalized sink region: [(1.32886, 12.0319), (21.3813, 37.7522)].
+[INFO CTS-0025]     Width:  20.0524.
+[INFO CTS-0026]     Height: 25.7203.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 30
+    Sub-region size: 20.0524 X 12.8602
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 15
+    Sub-region size: 10.0262 X 12.8602
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 8
+    Sub-region size: 10.0262 X 6.4301
+[INFO CTS-0034]     Segment length (rounded): 4.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 60.
+[INFO CTS-0018]     Created 69 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 69 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:9, 3:14, 4:16, 5:16, 6:8, 8:4, 10:1..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "wb_clk_i"
+[INFO CTS-0099]  Sinks 292
+[INFO CTS-0100]  Leaf buffers 60
+[INFO CTS-0101]  Average sink wire length 474.79 um
+[INFO CTS-0102]  Path depth 2 - 3
+[INFO CTS-0207]  Leaf load cells 58
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 5786um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               424    1591.53
+  Tap cell                               4815    6024.53
+  Buffer                                   38     142.64
+  Clock buffer                            103    1406.35
+  Timing Repair Buffer                    225    1318.76
+  Inverter                                211     792.01
+  Clock inverter                           24     324.06
+  Sequential cell                         234    5709.23
+  Multi-Input combinational cell          694    5088.63
+  Total                                  6768   22397.73
+Writing OpenROAD database to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.odb'…
+Writing netlist to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.nl.v'…
+Writing powered netlist to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.pnl.v'…
+Writing layout to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.def'…
+Writing timing constraints to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.sdc'…
+[INFO] Legalizing…
+Placement Analysis
+---------------------------------
+total displacement        335.9 u
+average displacement        0.0 u
+max displacement            7.2 u
+original HPWL           57889.9 u
+legalized HPWL          58959.9 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 651 instances
+[INFO DPL-0021] HPWL before           58959.9 u
+[INFO DPL-0022] HPWL after            57841.3 u
+[INFO DPL-0023] HPWL delta               -1.9 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               424    1591.53
+  Tap cell                               4815    6024.53
+  Buffer                                   38     142.64
+  Clock buffer                            103    1406.35
+  Timing Repair Buffer                    225    1318.76
+  Inverter                                211     792.01
+  Clock inverter                           24     324.06
+  Sequential cell                         234    5709.23
+  Multi-Input combinational cell          694    5088.63
+  Total                                  6768   22397.73
+Writing OpenROAD database to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.odb'…
+Writing netlist to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.nl.v'…
+Writing powered netlist to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.pnl.v'…
+Writing layout to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.def'…
+Writing timing constraints to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/spm-user_project_wrapper/runs/RUN_2026-03-21_16-46-02/34-openroad-cts/SPM_example.sdc'…
+%OL_CREATE_REPORT cts.rpt
+[INFO CTS-0003] Total number of Clock Roots: 1.
+[INFO CTS-0004] Total number of Buffers Inserted: 69.
+[INFO CTS-0005] Total number of Clock Subnets: 69.
+[INFO CTS-0006] Total number of Sinks: 234.
+%OL_END_REPORT

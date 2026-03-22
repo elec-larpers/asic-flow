@@ -1,0 +1,135 @@
+Reading OpenROAD database at '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/24-openroad-ioplacement/yolo26n_top.odb'…
+Reading library file at '/home/george-sleen/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/3j7sk634lffssphph2cw5y1zqr0www5z-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clock…
+[INFO] Setting output delay to: 10
+[INFO] Setting input delay to: 10
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
++ global_placement -density 0.45 -timing_driven -routability_driven -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 20.240 21.760 ) ( 230.000 228.480 ) um
+[INFO GPL-0006] NumInstances:              1888
+[INFO GPL-0007] NumPlaceInstances:         1112
+[INFO GPL-0008] NumFixedInstances:          776
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1180
+[INFO GPL-0011] NumPins:                   4533
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 250.000 250.000 ) um
+[INFO GPL-0013] CoreBBox: ( 20.240 21.760 ) ( 230.000 228.480 ) um
+[INFO GPL-0016] CoreArea:             43361.587 um^2
+[INFO GPL-0017] NonPlaceInstsArea:     1351.296 um^2
+[INFO GPL-0018] PlaceInstsArea:       13631.824 um^2
+[INFO GPL-0019] Util:                    32.449 %
+[INFO GPL-0020] StdInstsArea:         13631.824 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000009 HPWL: 31762610
+[InitialPlace]  Iter: 2 CG residual: 0.00000009 HPWL: 27043589
+[InitialPlace]  Iter: 3 CG residual: 0.00000008 HPWL: 26891134
+[InitialPlace]  Iter: 4 CG residual: 0.00000053 HPWL: 26719447
+[InitialPlace]  Iter: 5 CG residual: 0.00000093 HPWL: 26442080
+[INFO GPL-0031] FillerInit:NumGCells:      1548
+[INFO GPL-0032] FillerInit:NumGNets:       1180
+[INFO GPL-0033] FillerInit:NumGPins:       4533
+[INFO GPL-0023] TargetDensity:            0.450
+[INFO GPL-0024] AvrgPlaceInstArea:       12.259 um^2
+[INFO GPL-0025] IdealBinArea:            27.242 um^2
+[INFO GPL-0026] IdealBinCnt:               1591
+[INFO GPL-0027] TotalBinArea:         43361.587 um^2
+[INFO GPL-0028] BinCnt:        32     32
+[INFO GPL-0029] BinSize: (  6.555  6.460 )
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter:    1 overflow: 0.903 HPWL: 20430598
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 2.72e-08
+[INFO GPL-0103] Timing-driven: weighted 117 nets.
+[NesterovSolve] Iter:   10 overflow: 0.760 HPWL: 23008313
+[NesterovSolve] Iter:   20 overflow: 0.711 HPWL: 22787306
+[NesterovSolve] Iter:   30 overflow: 0.699 HPWL: 22644911
+[NesterovSolve] Iter:   40 overflow: 0.704 HPWL: 22623688
+[NesterovSolve] Iter:   50 overflow: 0.709 HPWL: 22674929
+[NesterovSolve] Iter:   60 overflow: 0.710 HPWL: 22721077
+[NesterovSolve] Iter:   70 overflow: 0.708 HPWL: 22701617
+[NesterovSolve] Iter:   80 overflow: 0.707 HPWL: 22668098
+[NesterovSolve] Iter:   90 overflow: 0.708 HPWL: 22668227
+[NesterovSolve] Iter:  100 overflow: 0.709 HPWL: 22688247
+[NesterovSolve] Iter:  110 overflow: 0.709 HPWL: 22693671
+[NesterovSolve] Iter:  120 overflow: 0.708 HPWL: 22681164
+[NesterovSolve] Iter:  130 overflow: 0.706 HPWL: 22670510
+[NesterovSolve] Iter:  140 overflow: 0.704 HPWL: 22669207
+[NesterovSolve] Iter:  150 overflow: 0.703 HPWL: 22667413
+[NesterovSolve] Iter:  160 overflow: 0.699 HPWL: 22656750
+[NesterovSolve] Iter:  170 overflow: 0.693 HPWL: 22639398
+[NesterovSolve] Iter:  180 overflow: 0.683 HPWL: 22608968
+[NesterovSolve] Iter:  190 overflow: 0.671 HPWL: 22561912
+[NesterovSolve] Iter:  200 overflow: 0.653 HPWL: 22495291
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 2.75e-08
+[INFO GPL-0103] Timing-driven: weighted 116 nets.
+[NesterovSolve] Iter:  210 overflow: 0.630 HPWL: 22378105
+[NesterovSolve] Iter:  220 overflow: 0.603 HPWL: 22231145
+[NesterovSolve] Snapshot saved at iter = 220
+[NesterovSolve] Iter:  230 overflow: 0.558 HPWL: 21931209
+[NesterovSolve] Iter:  240 overflow: 0.513 HPWL: 21714677
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 2.75e-08
+[INFO GPL-0103] Timing-driven: weighted 115 nets.
+[NesterovSolve] Iter:  250 overflow: 0.480 HPWL: 21680812
+[NesterovSolve] Iter:  260 overflow: 0.451 HPWL: 21739114
+[NesterovSolve] Iter:  270 overflow: 0.421 HPWL: 21753343
+[NesterovSolve] Iter:  280 overflow: 0.386 HPWL: 21726753
+[NesterovSolve] Iter:  290 overflow: 0.353 HPWL: 21874200
+[NesterovSolve] Iter:  300 overflow: 0.318 HPWL: 21797577
+[NesterovSolve] Iter:  310 overflow: 0.300 HPWL: 21916368
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileBBox: (    0    0 ) ( 6900 6900 ) DBU
+[INFO GPL-0038] TileCnt:      36   36
+[INFO GPL-0040] NumTiles: 1296
+[INFO GPL-0081] TotalRouteOverflow: 0
+[INFO GPL-0082] OverflowTileCnt: 0
+[INFO GPL-0083] 0.5%RC: 0.7315144283430917
+[INFO GPL-0084] 1.0%RC: 0.7132473679689261
+[INFO GPL-0085] 2.0%RC: 0.6893227444245265
+[INFO GPL-0086] 5.0%RC: 0.6535850231464092
+[INFO GPL-0087] FinalRC: 0.7223809
+[INFO GPL-0077] FinalRC lower than targetRC(1.01), routability not needed.
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 2.77e-08
+[INFO GPL-0103] Timing-driven: weighted 117 nets.
+[NesterovSolve] Iter:  320 overflow: 0.281 HPWL: 22049213
+[NesterovSolve] Iter:  330 overflow: 0.257 HPWL: 22159875
+[NesterovSolve] Iter:  340 overflow: 0.237 HPWL: 22244758
+[NesterovSolve] Iter:  350 overflow: 0.218 HPWL: 22359924
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 2.75e-08
+[INFO GPL-0103] Timing-driven: weighted 117 nets.
+[NesterovSolve] Iter:  360 overflow: 0.189 HPWL: 22425816
+[NesterovSolve] Iter:  370 overflow: 0.165 HPWL: 22543277
+[INFO GPL-0100] Timing-driven: executing resizer for reweighting nets.
+[INFO GPL-0101] Timing-driven: worst slack 2.73e-08
+[INFO GPL-0103] Timing-driven: weighted 117 nets.
+[NesterovSolve] Iter:  380 overflow: 0.139 HPWL: 22694222
+[NesterovSolve] Iter:  390 overflow: 0.114 HPWL: 22791142
+[NesterovSolve] Finished with Overflow: 0.099297
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               152     570.55
+  Tap cell                                624     780.75
+  Inverter                                  9      33.78
+  Sequential cell                         267    5679.20
+  Multi-Input combinational cell          836    7918.84
+  Total                                  1888   14983.12
+Writing OpenROAD database to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/27-openroad-globalplacement/yolo26n_top.odb'…
+Writing netlist to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/27-openroad-globalplacement/yolo26n_top.nl.v'…
+Writing powered netlist to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/27-openroad-globalplacement/yolo26n_top.pnl.v'…
+Writing layout to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/27-openroad-globalplacement/yolo26n_top.def'…
+Writing timing constraints to '/home/george-sleen/Documents/projects/sailbot-hackathon/asic-flow/runs/RUN_2026-03-21_16-46-51/27-openroad-globalplacement/yolo26n_top.sdc'…
